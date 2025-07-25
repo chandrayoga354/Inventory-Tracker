@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory Tracker - Barang Masuk/Keluar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Inventory Tracker Chandra</h1>
+
+  <form id="transaction-form">
+    <input type="text" id="nama-barang" placeholder="Nama Barang" required>
+    <input type="number" id="jumlah" placeholder="Jumlah" required>
+    <input type="date" id="tanggal" required>
+    <select id="jenis">
+      <option value="masuk">Barang Masuk</option>
+      <option value="keluar">Barang Keluar</option>
+    </select>
+    <input type="text" id="keterangan" placeholder="Keterangan">
+    <button type="submit">Tambah Transaksi</button>
+  </form>
+
+  <h2>Daftar Transaksi</h2>
+  <table id="tabel-transaksi">
+    <thead>
+      <tr>
+        <th>Nama Barang</th>
+        <th>Jumlah</th>
+        <th>Tanggal</th>
+        <th>Jenis</th>
+        <th>Keterangan</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>
